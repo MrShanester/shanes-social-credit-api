@@ -7,4 +7,11 @@ Rails.application.routes.draw do
   post "/deed" => "deeds#create"
   patch "/deed/:id" => "deeds#update"
   delete "/deed/:id" => "deeds#destroy"
+
+  # Friends routes
+  get "/friend" => "friends#index"
+  get "/friend/:id" => "friends#show"
+  post "/friend" => "friends#create"
+  patch "/friend/:id" => "friends#update"
+  delete "/friend/:id" => "friends#destroy"
 end
