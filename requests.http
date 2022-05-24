@@ -1,3 +1,5 @@
+# Friends controller
+
 ### Index
 GET http://localhost:3000/friend
 
@@ -30,3 +32,39 @@ Content-Type: application/json
 ### Destroy
 DELETE http://localhost:3000/friend/1
 
+
+# Deeds Controller
+
+### Index
+GET http://localhost:3000/deed
+
+
+### Show
+GET http://localhost:3000/deed/2
+
+
+### Create
+POST http://localhost:3000/deed
+Content-Type: application/json
+
+{
+  "deed": "Gave cookie",
+  "description": "Freshly baked",
+  "good": true,
+  "friend_id": 2
+}
+
+
+### Update
+PATCH http://localhost:3000/deed/1
+Content-Type: application/json
+
+{
+  "deed": "Gave 2 cookies",
+  "description": "Freshly baked",
+  "good": true,
+  "friend_id": 2
+}
+
+### Destroy
+DELETE http://localhost:3000/deed/1

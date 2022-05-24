@@ -42,6 +42,7 @@ class DeedsController < ApplicationController
       render json: {message: "Deed deleted"}
     else 
       render json: {error: "Deed unable to be deleted"}
+    end
   end
 
 end
