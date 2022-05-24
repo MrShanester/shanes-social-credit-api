@@ -36,7 +36,7 @@ class FriendsController < ApplicationController
   end
 
   def destroy
-    friend = Friend.find_by(id: params[id:])
+    friend = Friend.find_by(id: params[:id])
     if friend.delete
       render json: {message: "Friend deletion successful"}
     else 

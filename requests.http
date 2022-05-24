@@ -1,0 +1,32 @@
+### Index
+GET http://localhost:3000/friend
+
+
+### Show
+GET http://localhost:3000/friend/2
+
+
+### Create
+POST http://localhost:3000/friend
+Content-Type: application/json
+
+{
+  "name": "Tanner",
+  "description": "The tall one",
+  "score": 0
+}
+
+
+### Update
+PATCH http://localhost:3000/friend/1
+Content-Type: application/json
+
+{
+  "name": "Tanner",
+  "description": "The tall one",
+  "score": 100
+}
+
+### Destroy
+DELETE http://localhost:3000/friend/1
+
