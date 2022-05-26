@@ -7,6 +7,10 @@ GET http://localhost:3000/friend
 ### Show
 GET http://localhost:3000/friend/2
 
+### Show Deeds
+GET http://localhost:3000/friend/2/deeds
+
+
 
 ### Create
 POST http://localhost:3000/friend

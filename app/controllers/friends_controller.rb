@@ -10,6 +10,12 @@ class FriendsController < ApplicationController
     render json: friend.as_json
   end
 
+  def show_deeds
+    friend = Friend.find_by(id: params[:id])
+    deeds = friend.deeds
+    render json: deeds.as_json
+  end
+
   def create
     friend = Friend.new(
       name: params[:name],
